@@ -13,4 +13,18 @@ h1 {
   text-align: center;     
   }
 
-
+/* Especificidad: 001*/
+ul {
+  color:#aa1919;
+}
+/* Especificidad: 001*/
+nav{
+  color:darkblue;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+/* Especificidad: 002*/
+nav > a{
+  color:black;
+}
