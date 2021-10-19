@@ -1,7 +1,7 @@
 /*Especificidad: 001*/
 body {
   font-family: Tahoma, sans-serif;
-  color: #818181;
+  color: #0a0a0a;
   background-color: #fff;
   }
 /*Especificidad: 001*/
@@ -27,4 +27,14 @@ nav{
 /* Especificidad: 002*/
 nav > a{
   color:black;
+}
+/* Especificidad: 001*/
+img {
+  width: 100%; /*Problema que se muestre más grande que el tamaño real, se pixelará*/
+  height: auto;
+}
+/* Especificidad: 001*/
+video{
+  max-width: 100%;
+  height: auto;
 }
