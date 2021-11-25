@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Miguel Menéndez Rodríguez">
+    <title>Calculadora Cientifica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css">
+</head>
+
+<body>
+    <script src="CalculadoraCientifica.js"></script>
+    <h1>Calculadora Cientifica</h1>
+    <form>
+        <textarea disabled></textarea>
+        <input type="button" value="mrc" onclick="c.mrc()"/>
+        <input type="button" value="m-" onclick="c.mMenos()"/>
+        <input type="button" value="m+" onclick="c.mMas()"/>
+        <input type="button" value="/" onclick="c.inv()"/>
+        <input type="button" value="7" onclick="c.digitos('7')"/>
+        <input type="button" value="8" onclick="c.digitos('8')"/>
+        <input type="button" value="9" onclick="c.digitos('9')"/>
+        <input type="button" value="*" onclick="c.mult()"/>
+        <input type="button" value="4" onclick="c.digitos('4')"/>
+        <input type="button" value="5" onclick="c.digitos('5')"/>
+        <input type="button" value="6" onclick="c.digitos('6')"/>
+        <input type="button" value="-" onclick="c.resta()"/>
+        <input type="button" value="1" onclick="c.digitos('1')"/>
+        <input type="button" value="2" onclick="c.digitos('2')"/>
+        <input type="button" value="3" onclick="c.digitos('3')"/>
+        <input type="button" value="+" onclick="c.suma()"/>
+        <input type="button" value="0" onclick="c.digitos('0')"/>
+        <input type="button" value="." onclick="c.punto()"/>
+        <input type="button" value="C" onclick="c.borrar()"/>
+        <input type="button" value="=" onclick="c.igual()"/>
+        <input type="button" value="ln" onclick="c.ln()"/>
+    </form>
+</body>
+</html>

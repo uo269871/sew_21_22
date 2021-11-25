@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Miguel Menéndez Rodríguez">
+    <title>Tiempo - JSON</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio8.js"></script>
+    <link rel="stylesheet" href="Ejercicio8.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Datos meteorológicos</h1>
+    </header>
+    <article>
+        <h2>Oviedo</h2>
+        <button id="oviedo" onclick="new Meteo('Oviedo').verJSON()">Ver Tiempo</button>
+
+        <h2>Villablino</h2>
+        <button id="villablino" onclick="new Meteo('Villablino').verJSON()">Ver Tiempo</button>
+
+        <h2>Cangas de Onís</h2>
+        <button id="cangues" onclick="new Meteo('Cangas de Onís').verJSON()">Ver Tiempo</button>
+
+        <h2>Caboalles de Abajo</h2>
+        <button id="caboalles" onclick="new Meteo('Caboalles de Abajo').verJSON()">Ver Tiempo</button>
+
+        <h2>Helgueras</h2>
+        <button id="helgueras" onclick="new Meteo('Helgueras').verJSON()">Ver Tiempo</button>
+        <section>
+            <h2>Tiempo actual</h2>
+        </section>
+    </article>
+
+</body>
