@@ -4,6 +4,16 @@ class GeoLocalizacion{
         navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this));
     }
 
+    getPosicion(posicion) {
+        this.longitud = posicion.coords.longitude;
+        this.latitud = posicion.coords.latitude;
+        this.precision = posicion.coords.accuracy;
+        this.altitud = posicion.coords.altitude;
+        this.precisionAltitud = posicion.coords.altitudeAccuracy;
+        this.rumbo = posicion.coords.heading;
+        this.velocidad = posicion.coords.speed;
+    }
+
     show(){
         var ubicacion = document.querySelector("body > section");
         var datos = '';
