@@ -12,9 +12,9 @@
 <body>
     <script src="CalculadoraRPN.js"></script>
     <h1>Calculadora RPN</h1>
-    <form>
-        <textarea id="pila" disabled></textarea>
-        <textarea id="pantalla" disabled></textarea>
+    <form action="" method="get">
+        <textarea id="pila" name="pila" disabled></textarea>
+        <textarea id="pantalla" name="pantalla" disabled></textarea>
 
         <input type="button" value="asin" onclick="c.asin()" />
         <input type="button" value="acos" onclick="c.acos()" />
@@ -43,7 +43,7 @@
 
         <input type="button" value="0" onclick="c.digitos('0')" />
         <input type="button" value="." onclick="c.punto()" />
-        <input type="button" value="Enter" onclick="c.enter()" />
+        <input type="submit" value="Enter" onclick="c.enter()" />
         <input type="button" value="+" onclick="c.suma()" />        
     </form>
 </body>
