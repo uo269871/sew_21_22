@@ -15,11 +15,9 @@
 
 <body>
     <h1>Ejercicio GeoJSON</h1>
-    <input type="file" onchange="m.initMap(this.files);">
-    <main>
-        <h2>Mapa dinamico del GeoJSON</h2>
-        <section id="map"></section>
-    </main>
+    <label for="file">Seleccione un archivo GeoJSON: </label>
+    <input type="file" id="file" onchange="m.initMap(this.files);">
+    <section id="map"><h2>Mapa dinamico del GeoJSON</h2></section>
 </body>
 
 </html>
