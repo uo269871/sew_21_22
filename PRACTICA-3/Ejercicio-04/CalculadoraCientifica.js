@@ -162,7 +162,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         document.querySelector("body > form > textarea").textContent = this.operation
     }
 
-    x10(){
+    pow10(){
         this.operation = Math.pow(10,document.querySelector("body > form > textarea").textContent)
         this.solved = true;
         this.pointUsed = false;
@@ -170,6 +170,20 @@ class CalculadoraCientifica extends CalculadoraBasica{
     }
 
     x2(){
+        this.operation = Math.pow(document.querySelector("body > form > textarea").textContent,2)
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    x3(){
+        this.operation = Math.pow(document.querySelector("body > form > textarea").textContent,3)
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    dosX(){
         this.operation = Math.pow(2,document.querySelector("body > form > textarea").textContent)
         this.solved = true;
         this.pointUsed = false;
@@ -178,16 +192,31 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     xy(){
         this.operation = document.querySelector("body > form > textarea").textContent + "**"
-        var text = document.querySelector("body > form > textarea").textContent + "^"
-        this.solved = false;
+        this.solved = true;
         this.pointUsed = false;
-        document.querySelector("body > form > textarea").textContent = text
+        document.querySelector("body > form > textarea").textContent = this.operation
     }
 
-    logxy(){
-        // se pone primero x, luego el log, y luego la base
-
+    ex(){
+        this.operation = Math.exp(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
         
+    }
+
+    root(){
+        this.operation = Math.sqrt(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    v3(){
+        this.operation = Math.cbrt(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
     }
 
     inv(){
@@ -195,6 +224,95 @@ class CalculadoraCientifica extends CalculadoraBasica{
         this.solved = true
         this.pointUsed = false
         document.querySelector("body > form > textarea").textContent = eval(this.operation)
+    }
+
+    mod(){
+        this.operation = document.querySelector("body > form > textarea").textContent + "%"
+        this.solved = false;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    sin(){
+        this.operation = Math.sin(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    cos(){
+        this.operation = Math.cos(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    tan(){
+        this.operation = Math.tan(Number(document.querySelector("body > form > textarea").textContent))
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    parIzq(){
+        this.operation = document.querySelector("body > form > textarea").textContent + "("
+        this.solved = false;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    parDer(){
+        this.operation = document.querySelector("body > form > textarea").textContent + ")"
+        this.solved = false;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    exp(){
+        this.operation = document.querySelector("body > form > textarea").textContent + ".e+"
+        this.solved = false;
+        this.pointUsed = true;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+      
+    factorial(n) {
+        var f = [];
+        if (n == 0 || n == 1)
+            return 1;
+        if (f[n] > 0)
+            return f[n];
+        return f[n] = this.factorial(n - 1) * n;
+    }
+
+    fact(){
+        var i = Number(document.querySelector("body > form > textarea").textContent)
+        this.operation = this.factorial(i)
+        this.solved = true;
+        this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    sign(){
+        this.operation = document.querySelector("body > form > textarea").textContent + "*-1"
+        this.operation = eval(this.operation);
+        this.solved = false;
+        if(!this.pointUsed)
+            this.pointUsed = false;
+        document.querySelector("body > form > textarea").textContent = this.operation
+    }
+
+    mc(){
+        this.memory = "";
+    }
+
+    mr(){
+        document.querySelector("body > form > textarea").textContent = this.memory;
+        this.operation = this.memory;
+    }
+
+    ms(){
+        if (!isNaN(document.querySelector("body > form > textarea").textContent))
+            this.memory = document.querySelector("body > form > textarea").textContent;
     }
 }
 

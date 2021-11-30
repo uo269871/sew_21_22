@@ -20,6 +20,7 @@ class Meteo {
                 
                 //Extracción de los datos contenidos en el XML
                 var totalNodos            = $('*',datos).length; // cuenta los elementos de XML: son los nodos del árbol DOM de XML
+                var icono = $('weather', datos).attr("icon");
                 var ciudad                = $('city',datos).attr("name");
                 var longitud              = $('coord',datos).attr("lon");
                 var latitud               = $('coord',datos).attr("lat");
@@ -59,6 +60,7 @@ class Meteo {
                 var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                 
                 var stringDatos =  "<ul><li>Número de elementos del XML: " + totalNodos + "</li>";
+                    stringDatos += '<li><img alt="Imagen del tiempo" src= "http://openweathermap.org/img/w/' + icono + '.png"></li>'
                     stringDatos += "<li>Ciudad: " + ciudad + "</li>";
                     stringDatos += "<li>Longitud: " + longitud + " grados</li>";
                     stringDatos += "<li>Latitud: " + latitud + " grados</li>";
