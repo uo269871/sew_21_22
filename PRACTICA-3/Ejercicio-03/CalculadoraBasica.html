@@ -7,33 +7,36 @@
     <meta name="author" content="Miguel Menéndez Rodríguez">
     <title>Calculadora Basica</title>
     <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css">
+    <script src="CalculadoraBasica.js"></script>
 </head>
 
 <body>
-    <h1>Calculadora Básica</h1>
-    <script src="CalculadoraBasica.js"></script>
-    <form>
-        <textarea title="hola" disabled></textarea>
-        <input type="button" value="mrc" onclick="c.mrc()"/>
-        <input type="button" value="m-" onclick="c.mMenos()"/>
-        <input type="button" value="m+" onclick="c.mMas()"/>
-        <input type="button" value="/" onclick="c.div()"/>
-        <input type="button" value="7" onclick="c.digitos('7')"/>
-        <input type="button" value="8" onclick="c.digitos('8')"/>
-        <input type="button" value="9" onclick="c.digitos('9')"/>
-        <input type="button" value="*" onclick="c.mult()"/>
-        <input type="button" value="4" onclick="c.digitos('4')"/>
-        <input type="button" value="5" onclick="c.digitos('5')"/>
-        <input type="button" value="6" onclick="c.digitos('6')"/>
-        <input type="button" value="-" onclick="c.resta()"/>
-        <input type="button" value="1" onclick="c.digitos('1')"/>
-        <input type="button" value="2" onclick="c.digitos('2')"/>
-        <input type="button" value="3" onclick="c.digitos('3')"/>
-        <input type="button" value="+" onclick="c.suma()"/>
-        <input type="button" value="0" onclick="c.digitos('0')"/>
-        <input type="button" value="." onclick="c.punto()"/>
-        <input type="button" value="C" onclick="c.borrar()"/>
-        <input type="button" value="=" onclick="c.igual()"/>
-    </form>
+    <section>
+        <h1>Calculadora Básica</h1>
+        
+        <form>
+            <textarea title="hola" disabled></textarea>
+            <input type="button" value="mrc" onclick="c.mrc()"/>
+            <input type="button" value="m-" onclick="c.mMenos()"/>
+            <input type="button" value="m+" onclick="c.mMas()"/>
+            <input type="button" value="/" onclick="c.div()"/>
+            <input type="button" value="7" onclick="c.digitos('7')"/>
+            <input type="button" value="8" onclick="c.digitos('8')"/>
+            <input type="button" value="9" onclick="c.digitos('9')"/>
+            <input type="button" value="*" onclick="c.mult()"/>
+            <input type="button" value="4" onclick="c.digitos('4')"/>
+            <input type="button" value="5" onclick="c.digitos('5')"/>
+            <input type="button" value="6" onclick="c.digitos('6')"/>
+            <input type="button" value="-" onclick="c.resta()"/>
+            <input type="button" value="1" onclick="c.digitos('1')"/>
+            <input type="button" value="2" onclick="c.digitos('2')"/>
+            <input type="button" value="3" onclick="c.digitos('3')"/>
+            <input type="button" value="+" onclick="c.suma()"/>
+            <input type="button" value="0" onclick="c.digitos('0')"/>
+            <input type="button" value="." onclick="c.punto()"/>
+            <input type="button" value="C" onclick="c.borrar()"/>
+            <input type="button" value="=" onclick="c.igual()"/>
+        </form>
+    </section>
 </body>
 </html>

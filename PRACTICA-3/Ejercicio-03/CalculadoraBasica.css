@@ -1,5 +1,5 @@
 /*002*/
-body > form {
+body > form > section {
     margin: 0.125em;
     padding: 1em;
     background-color: rgb(48, 48, 48);
@@ -22,7 +22,7 @@ input {
 }
 
 /*001*/
-body > form > textarea {
+body > form > section > textarea {
     text-align: right;
     margin-bottom: 1em;
     background-color: rgb(218, 213, 148);
@@ -36,15 +36,15 @@ body > form > textarea {
     color: black;
 }
 
-body > form > input:nth-child(5),
-body > form > input:nth-child(9),
-body > form > input:nth-child(13),
-body > form > input:nth-child(17){
+body > form > section > input:nth-child(5),
+body > form > section > input:nth-child(9),
+body > form > section > input:nth-child(13),
+body > form > section > input:nth-child(17){
     background-color: rgb(224, 75, 75);
 }
 
-body > form > input:nth-child(4),
-body > form > input:nth-child(2),
-body > form > input:nth-child(3){
+body > form > section > input:nth-child(4),
+body > form > section > input:nth-child(2),
+body > form > section > input:nth-child(3){
     background-color: gold;
 }
