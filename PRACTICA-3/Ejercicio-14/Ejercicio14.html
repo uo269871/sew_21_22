@@ -17,7 +17,8 @@
     <h1>Ejercicio 14</h1>
     <input type="button" value="Obtener mis datos de ubicación" onClick="f.showPosition();" />
     <input type="button" value="Obtener antiguos datos de ubicación" onClick="f.showPreviousPosition();" />
-    <input type="file" id="file" name="file" onchange="f.initMap(this.files);">
+    <label for="file">Seleccione un archivo GeoJSON: </label>
+    <input type="file" id="file" onchange="f.initMap(this.files);">
     <section id = "map">
         <h2>Mapa</h2>
     </section>
