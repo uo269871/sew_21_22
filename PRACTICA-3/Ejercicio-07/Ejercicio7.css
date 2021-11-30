@@ -7,7 +7,7 @@ body {
   /*Especificidad: 001*/
   h1 {
     color: #fff;    
-    background-color:#ffad9a; 
+    background-color:#ff2f00; 
     text-transform: uppercase;
     padding: 2em; 
     text-align: center;     
