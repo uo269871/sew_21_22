@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://localhost/PRACTICA-3/Ejercicio-12/Ejercicio12.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Varios archivos</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Miguel Menéndez Rodríguez">
+    <link rel="stylesheet" type="text/css" href="./Varios archivos_files/Ejercicio12.css">
+    <script src="./Varios archivos_files/Ejercicio12.js.descarga"></script>
+</head>
+
+<body onload="r.validate();">
+    <h1>Lector de textos</h1>
+    <section>
+        <h2>API File: Selecionar varios archivos de la máquina cliente</h2>
+        <label for="subirArchivos">Seleccione un archivo de texto: </label>
+        <input id="subirArchivos" type="file" name="Archivos" onchange="r.tamFiles();" multiple="">
+        <p>Archivos seleccionados: <span id="numero">0</span></p>
+        <p>Tamaño total: <span id="tamaño">0</span></p>
+        <span id="nombres"></span>
+
+
+        <label for="archivoTexto">Seleccione un archivo de texto: </label>
+
+        <input type="file" id="archivoTexto" onchange="r.readFile(this.files);">
+
+        <p id="nombreArchivo"></p>
+        <p id="tamañoArchivo"></p>
+        <p id="tipoArchivo"></p>
+        <p id="ultimaModificacion"></p>
+        <p id="contenidoArchivo"></p>
+        <pre id="areaTexto"></pre>
+        <p id="errorLectura"></p>
+    </section>
+
+
+
+</body></html>
