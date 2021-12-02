@@ -1,0 +1,13 @@
+/* 000-Version.css */
+/* Version 1.0. 09/12/2017. Juan Manuel Cueva Lovelle. Universidad de Oviedo */
+h1{
+    text-align:center;
+    color:blue;
+}
+h2{
+    text-align:left;
+    color:green;
+}
+p{
+    color:gray;
+}

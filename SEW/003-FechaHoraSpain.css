@@ -1,0 +1,21 @@
+/*  003-FechaHoraSpain.css
+    Versión 1.0 10/12/2017 Juan Manuel Cueva Lovelle. Universidad de Oviedo
+*/
+h1{
+    text-align:left;
+    color:blue;
+}
+p{
+    color:gray;
+}
+code{
+    text-align:left;
+    color:blue;
+}
+footer{
+    margin-top:2em;
+}
+footer a img{
+    height:31px; 
+    width:88px;
+}

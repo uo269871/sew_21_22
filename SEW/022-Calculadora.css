@@ -1,0 +1,36 @@
+/*  022-Calculadora.css
+    Versión 1.0 29/11/2018 Juan Manuel Cueva Lovelle. Universidad de Oviedo
+*/
+h1{
+    text-align:left;
+    color:blue;
+}
+h2{
+    text-align:left;
+    color:green;
+}
+h3{
+    text-align:left;
+    color:red;
+}
+h4{
+    text-align:left;
+    color:mediumorchid;
+}
+p{
+    color:gray;
+}
+code{
+    text-align:left;
+    color:blue;
+}
+span{
+    color:red;
+}
+footer{
+    margin-top:2em;
+}
+footer a img{
+    height:31px; 
+    width:88px;
+}

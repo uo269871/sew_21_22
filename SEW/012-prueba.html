@@ -1,0 +1,14 @@
+<h3>Manual de PHP 4, PHP 5 y PHP 7</h3>
+<p>readfile — Realiza la salida de un archivo</p>
+<h3>Descripción</h3>
+<p>int readfile ( string $filename [, bool $use_include_path = false [, resource $context ]] )</p>
+<p>Lee un archivo y lo escribe en el búfer de salida</p> 
+<h3>Parámetros</h3>
+<h4>filename</h4>
+<p>El nombre del archivo a leer</p> 
+<h4>use_include_path</h4>
+<p>Se puede emplear el segundo parámetro opcional y establecerlo a TRUE si se desea buscar también el archivo en include_path</p>
+<h4>context</h4>
+Un resource de flujos de contexto. 
+<h3>Valores devueltos</h3>
+<p>Devuelve el número de bytes leídos del archivo. Si se produjo un error, devuelve FALSE y, a menos que la función fuese llamada como @readfile(), se imprime un mensaje de error</p>

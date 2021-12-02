@@ -1,0 +1,11 @@
+MANUAL DE PHP
+- (PHP 4, PHP 5, PHP 7)
+fgets — Obtiene una línea desde el puntero a un fichero
+- Descripción 
+string fgets ( resource $handle [, int $length ] )
+Obtiene una línea desde el puntero al fichero. 
+- Parámetros 
+handle
+El fichero al que se apunta debe ser válido, y debe apuntar a un fichero abierto por fopen() o fsockopen() (y que todavía no esté cerrado por fclose()).
+length
+La lectura termina cuando se han leído length - 1 bytes, o una nueva línea (la cual está incluida en el valor de retorno), o un EOF (lo que suceda primero). Si no se especifica una longitud, se seguirá leyendo desde el flujo hasta que alcance el final de la línea.

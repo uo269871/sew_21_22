@@ -1,0 +1,13 @@
+/* 270-MySQL.css */
+/* Versión 1.0. 23/11/2020 Juan Manuel Cueva Lovelle. Universidad de Oviedo */
+h1{
+    text-align:center;
+    color:blue;
+}
+h2{
+    text-align:left;
+    color:green;
+}
+p{
+    color:gray;
+}
