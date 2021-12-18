@@ -29,8 +29,8 @@ body > form > textarea {
     background-color: rgb(218, 213, 148);
     min-height: 5em;
     max-height: 5em;
-    min-width: 29em;
-    max-width: 29em;
+    min-width: 34em;
+    max-width: 34em;
     grid-column-start: 1;
     grid-column-end: 5;
     color: black;
@@ -56,4 +56,8 @@ body > form > input:nth-child(18),
 body > form > input:nth-child(22),
 body > form > input:nth-child(26){
     background-color: rgb(0, 110, 255);
+}
+body > form > input:nth-child(27){
+    grid-column-start: 1;
+    grid-column-end: 5;
 }

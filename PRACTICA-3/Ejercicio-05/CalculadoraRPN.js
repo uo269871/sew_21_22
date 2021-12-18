@@ -19,7 +19,7 @@ class StackLIFO{
         var tam = this.size() - 1
 
         for(var i in this.datos){
-            s += tam-- +"\t" + this.datos[i] +"\n"
+            s += 'Indice: ' + tam-- +"\t Valor: " + this.datos[i] +"\n"
         }
 
         return s;
@@ -221,6 +221,12 @@ class CalculadoraRPN{
             this.pointUsed = false;
             document.querySelector("#pila").textContent = this.pila.show();
         }
+    }
+
+    borrar(){
+        this.pointUsed = false
+        this.screen = ''
+        document.querySelector("#pantalla").textContent = this.screen;
     }
 }
 

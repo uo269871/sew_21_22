@@ -9,7 +9,7 @@ session_start();
 	<title>Calculadora RPN</title>
 	<meta name="description" content="Calculadora RPN. Ejercicio 3">
 	<meta name="keywords" content="calculadora,rpn,calculo,matematicas">
-	<meta name="author" content="Alejandro Álvarez Varela">
+	<meta name="author" content="Miguel Menéndez Rodríguez">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CalculadoraRPN.css" />
 </head>
