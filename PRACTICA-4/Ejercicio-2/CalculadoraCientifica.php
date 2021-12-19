@@ -167,7 +167,7 @@
 			    };
 
 			    echo "<form action='CalculadoraCientifica.php' method='post' name='Calculadora'>
-			    	<textarea disabled>$calculadora->console</textarea>
+			    	<textarea title='pantalla' disabled>$calculadora->console</textarea>
                     <button type='submit' name='raiz' >√</button>
 			    	<button type='submit' name='cuadrado' >x^2</button>
 			    	<button type='submit' name='pi' >π</button>

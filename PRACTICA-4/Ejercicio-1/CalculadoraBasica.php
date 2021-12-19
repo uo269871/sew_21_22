@@ -111,7 +111,7 @@
 			};
 
 			echo "<form action='CalculadoraBasica.php' method='post' name='Calculadora'>
-				<textarea disabled>$calculadora->console</textarea>
+				<textarea title='pantalla' disabled>$calculadora->console</textarea>
 				<button type='submit' name='mrc'>MRC</button>
 				<button type='submit' name='m-'>M-</button>
 				<button type='submit' name='m+'>M+</button>

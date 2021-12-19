@@ -238,8 +238,8 @@ session_start();
 	};
 
 	echo "<form action='CalculadoraRPN.php' method='post' name='Calculadora'>
-				<textarea disabled>$calculadora->valoresPila</textarea>
-				<textarea disabled>$calculadora->consola</textarea>
+				<textarea title='pila' disabled>$calculadora->valoresPila</textarea>
+				<textarea title='pantalla' disabled>$calculadora->consola</textarea>
 				<button type='submit' name='sqrt'>&#x221A;</button>
 				<button type='submit' name='sin'>sin</button>
 				<button type='submit' name='cos'>cos</button>
